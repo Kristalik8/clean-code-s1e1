@@ -10,23 +10,24 @@
           charset="utf-8">
 </head>
 <body class="body">
-<div class="start-wrap-img">
+<header class="start-wrap-img">
     <img src="./eisenhower-matrix.jpg" class="start-img">
     <a class="more-info"
        href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
     </a>
-</div>
-<div class="main">
-    <p id="add-task">
+</header>
+<main class="main">
+    <section id="add-task">
         <label class="add-title" for="new-task">Add Item</label>
-    <div class="task-row-wrapper">
-        <input id="new-task"
-               class="task"
-               type="text">
-        <button сlass="button">Add</button>
-    </div>
-    </p>
+        <div class="task-row-wrapper">
+            <input id="new-task"
+                   class="task"
+                   type="text">
+            <button сlass="button">Add</button>
+        </div>
+    </section>
+    <section>
     <h3 class="task-title">Todo</h3>
     <ul id="incomplete-tasks">
         <li class="task-item">
@@ -43,11 +44,13 @@
             <label class="task task-label">Go Shopping</label>
             <input type="text" value="Go Shopping" class="task input-text">
             <button class="button edit-task">Save</button>
-            <button class="button delete-task" >
+            <button class="button delete-task">
                 <img src="./remove.svg" class="delete-task-img">
             </button>
         </li>
     </ul>
+    </section>
+    <section>
     <h3 class="task-title">Completed</h3>
     <ul id="completed-tasks">
         <li class="task-item">
@@ -60,7 +63,8 @@
             </button>
         </li>
     </ul>
-</div>
+    </section>
+</main>
 <script src="app.js"></script>
 </body>
 </html>
