@@ -5,23 +5,23 @@
     font-family: Lato, sans-serif;
 }
 
-.start-wrap {
+.start {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
 
-.start-img {
+.start__img {
     width: 100%;
 }
 
-.more-info {
+.start__more-info {
     font-family: fantasy, cursive;
 }
 
-@media (max-width: 768px) {
-    .start-wrap {
+@media (max-width:768px) {
+    .start {
         text-align: center;
     }
 }
@@ -32,24 +32,25 @@
     margin: 0 auto 0;
 }
 
-.task {
+.task-input,
+.task-label {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add__new-task-wrap {
     display: flex;
 }
 
 ul {
-    margin: 0;
+    margin:0;
     padding: 0;
 }
 
 li,
 h3 {
-    list-style: none;
+    list-style:none;
 }
 
 input,
@@ -72,8 +73,9 @@ button {
 }
 
 /* Heading */
-.task-title,
-.add-title {
+
+.title,
+.add__label-new-task {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -83,7 +85,8 @@ button {
     text-transform: uppercase;
 }
 
-.input-text {
+.input-text,
+.add__input_task {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -101,17 +104,17 @@ button {
 }
 
 /* New Task */
-.add-title {
+.add__title {
     display: block;
     margin: 0 0 20px;
 }
 
-#new-task {
+.add__input {
     width: 318px;
 }
 
 /* Task list */
-.task-item {
+.list-item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -120,51 +123,51 @@ button {
     align-items: center;
 }
 
-.task-item > * {
+.incomplete__item > * {
     vertical-align: middle;
 }
 
-.task-item > .checkbox {
+.checkbox {
     margin: 0 10px;
 }
 
-.task-item > .task-label {
+.incomplete .task-label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-.task-item > .input-text {
+.incomplete__item > .input-text {
     width: 226px
 }
 
-.delete-task-img {
+.delete-img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-.delete-task-img:hover {
+.delete-img:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks .task-label {
+.completed .task-label {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
 .input-text {
-    display: none;
+    display:none;
 }
 
-.edit-mode .input-text {
-    display: inline-block;
-    width: 224px;
+.incomplete__item_edit-mode .task-input {
+    display:inline-block;
+    width:224px;
 }
 
-.edit-mode .label {
-    display: none;
+.incomplete__item_edit-mode .task-label {
+    display:none;
 }
