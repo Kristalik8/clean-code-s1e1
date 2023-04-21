@@ -88,7 +88,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".btn-edit");
-    var containsClass=listItem.classList.contains("incomplete__item_edit-mode");
+    var containsClass=listItem.classList.contains("incomplete__tasks");
     //If class of the parent is .editMode
     if(containsClass){
 

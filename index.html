@@ -10,12 +10,12 @@
         charset="utf-8">
 </head>
 <body class="body">
-<header class="start">
-  <h1 class="start__title title" hidden>Todo App</h1>
-  <figure class="start__container-img">
-    <img src="./eisenhower-matrix.jpg" class="start__img" alt="Eisenhower matrix">
-    <figcaption class="start__more-wrap">
-      <a class="start__more-info"
+<header class="header">
+  <h1 class="header__title title" hidden>Todo App</h1>
+  <figure class="header__container-img">
+    <img src="./eisenhower-matrix.jpg" class="header__img" alt="Eisenhower matrix">
+    <figcaption class="header__more-wrap">
+      <a class="header__more-info"
          href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
       </a>
@@ -25,16 +25,16 @@
 <main class="main">
   <section class="add">
     <h2 class="add__title title">
-      <label class="add__label-new-task" for="new-task">Add Item</label>
+      <label class="add__label" for="new-task">Add Item</label>
     </h2>
     <div class="add__new-task-wrap">
       <input id="new-task" class="add__input task-input add__input_task" type="text">
-      <button class="button add__btn"> Add</button>
+      <button class="button add__btn">Add</button>
     </div>
   </section>
   <section class="incomplete">
     <h2 class="incomplete__title title">Todo</h2>
-    <ul class="incomplete__list" id="incomplete-tasks">
+    <ul class="incomplete__tasks" id="incomplete-tasks">
       <li class="incomplete__item list-item">
         <input type="checkbox" class="incomplete__checkbox checkbox">
         <label class="task-label incomplete__label">Pay Bills</label>
@@ -73,3 +73,4 @@
 <script src="app.js"></script>
 </body>
 </html>
+
